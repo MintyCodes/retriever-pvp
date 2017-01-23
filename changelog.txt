@@ -18,3 +18,8 @@ Monday, 23 January 2017 (GMT)
 Monday, 23 January 2017 (GMT) 
 
 - Added command /pvpsetspawn with permission
+
+19:54
+Monday, 23 January 2017 (GMT) 
+
+- Added command /pvpdelspawn with permission

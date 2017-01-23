@@ -5,13 +5,16 @@ import org.bukkit.event.Listener;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import me.admin.retrieverpvp.commands.CommandPvPDelSpawn;
 import me.admin.retrieverpvp.commands.CommandPvPChallenge;
 import me.admin.retrieverpvp.commands.CommandPvPHelp;
-import me.admin.retrieverpvp.commands.CommandSetSpawn;
+import me.admin.retrieverpvp.commands.CommandPvPSetSpawn;
+import me.admin.retrieverpvp.commands.CommandPvpTeleport;
 
 public class Core extends JavaPlugin {
 	
-	private CommandSetSpawn spawnLocs;
+	private CommandPvPSetSpawn spawnLocs;
+	private CommandPvPDelSpawn delSpawn;
 
 	private static Plugin plugin;
 
@@ -22,12 +25,15 @@ public class Core extends JavaPlugin {
 			getDataFolder().mkdirs();
 		}
 		
-		this.spawnLocs = new CommandSetSpawn(this);
+		this.spawnLocs = new CommandPvPSetSpawn(this);
+		this.delSpawn = new CommandPvPDelSpawn(this);
 		
 		
 		getCommand("pvphelp").setExecutor(new CommandPvPHelp());
 		getCommand("pvpchallenge").setExecutor(new CommandPvPChallenge());
-		getCommand("pvpsetspawn").setExecutor(new CommandSetSpawn(this));
+		getCommand("pvpsetspawn").setExecutor(new CommandPvPSetSpawn(this));
+		getCommand("pvpdelspawn").setExecutor(new CommandPvPDelSpawn(this));
+		getCommand("pvpteleport").setExecutor(new CommandPvpTeleport(this));
 	}
 
 	public void onDisable() {

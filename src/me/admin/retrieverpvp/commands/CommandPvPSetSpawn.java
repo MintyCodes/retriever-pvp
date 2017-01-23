@@ -14,11 +14,11 @@ import me.admin.retrieverpvp.utils.MessageSpawnSet;
 import me.admin.retrieverpvp.utils.MessageSyntaxError;
 import net.md_5.bungee.api.ChatColor;
 
-public class CommandSetSpawn extends Abstract implements CommandExecutor{
+public class CommandPvPSetSpawn extends Abstract implements CommandExecutor{
 	
 
 	
-	public CommandSetSpawn(Core core){
+	public CommandPvPSetSpawn(Core core){
 		super(core, "PvPSpawns.yml");
 	}
 	

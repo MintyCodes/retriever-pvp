@@ -14,6 +14,12 @@ commands:
     pvpsetspawn:
       description: Sets Spawn
       usage: /<command>
+    pvpdelspawn:
+      description: Deletes Spawn
+      usage: /<command>
+    pvpteleport:
+      description: Teleports the player
+      usage: /<command>
       
 permissions:
     retrieverpvp.pvphelp:
@@ -25,3 +31,12 @@ permissions:
     retrieverpvp.setspawn:
       default: op
       description: Set Spawn
+    retrieverpvp.delspawn:
+      default: op
+      description: Delete Spawn
+    retrieverpvp.teleport:
+      default: op
+      description: Base teleport command
+    retrieverpvp.teleport.others:
+      default: op
+      description: Teleport others command
