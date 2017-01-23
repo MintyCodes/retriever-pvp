@@ -1,0 +1,15 @@
+name: RetrieverMCPvP
+description: PvP
+author: MintyCodes
+main: me.admin.retrieverpvp.Core
+version: Development
+
+commands:
+    pvphelp:
+      description: Displays the Help Message for PvP
+      usage: /<command>
+      
+permissions:
+    retrieverpvp.pvphelp:
+      default: op
+      description: Allows access to /pvphelp

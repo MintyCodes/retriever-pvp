@@ -3,3 +3,8 @@ Monday, 23 January 2017 (GMT) -
 
 - Started Project
 - Added changelog.txt 
+
+17:53
+Monday, 23 January 2017 (GMT) 
+
+- Added command /pvphelp
