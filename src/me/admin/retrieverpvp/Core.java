@@ -5,6 +5,7 @@ import org.bukkit.event.Listener;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
+import me.admin.retrieverpvp.commands.CommandPvPChallenge;
 import me.admin.retrieverpvp.commands.CommandPvPHelp;
 
 public class Core extends JavaPlugin {
@@ -14,6 +15,7 @@ public class Core extends JavaPlugin {
 	public void onEnable() {
 		plugin = this;
 		getCommand("pvphelp").setExecutor(new CommandPvPHelp());
+		getCommand("pvpchallenge").setExecutor(new CommandPvPChallenge());
 	}
 
 	public void onDisable() {

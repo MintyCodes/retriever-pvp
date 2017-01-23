@@ -28,12 +28,12 @@ public class CommandPvPHelp implements CommandExecutor{
 			}
 			
 			p.sendMessage(MessagePvPHeaderFooter.Header);
-			p.sendMessage(ChatColor.DARK_AQUA + "/pvp setspawn <arenaName>" + ChatColor.GRAY + ":" + ChatColor.GOLD + " Sets the Spawn Point for a PvP arena");
-			p.sendMessage(ChatColor.DARK_AQUA + "/pvp delspawn <arenaName>" + ChatColor.GRAY + ":" + ChatColor.GOLD + " Removes the Spawn Point for a PvP arena");
-			p.sendMessage(ChatColor.DARK_AQUA + "/pvp serverplay" + ChatColor.GRAY + ":" + ChatColor.GOLD + " Teleports all online players to the PvP arena");
-			p.sendMessage(ChatColor.DARK_AQUA + "/pvp teleport <arenaName> " + ChatColor.GRAY + ":" + ChatColor.GOLD + " Teleports player to the specified Arena");
-			p.sendMessage(ChatColor.DARK_AQUA + "/pvp mode <boolean> " + ChatColor.GRAY + ":" + ChatColor.GOLD + " Puts you in PvP mode");
-			p.sendMessage(ChatColor.DARK_AQUA + "/pvp challenge <playerName> " + ChatColor.GRAY + ":" + ChatColor.GOLD + " Challenges a player to a PvP battle");
+			p.sendMessage(ChatColor.DARK_AQUA + "/pvpsetspawn <arenaName>" + ChatColor.GRAY + ":" + ChatColor.GOLD + " Sets the Spawn Point for a PvP arena");
+			p.sendMessage(ChatColor.DARK_AQUA + "/pvpdelspawn <arenaName>" + ChatColor.GRAY + ":" + ChatColor.GOLD + " Removes the Spawn Point for a PvP arena");
+			p.sendMessage(ChatColor.DARK_AQUA + "/pvpserverplay" + ChatColor.GRAY + ":" + ChatColor.GOLD + " Teleports all online players to the PvP arena");
+			p.sendMessage(ChatColor.DARK_AQUA + "/pvpteleport <arenaName> " + ChatColor.GRAY + ":" + ChatColor.GOLD + " Teleports player to the specified Arena");
+			p.sendMessage(ChatColor.DARK_AQUA + "/pvpmode <boolean> " + ChatColor.GRAY + ":" + ChatColor.GOLD + " Puts you in PvP mode");
+			p.sendMessage(ChatColor.DARK_AQUA + "/pvpchallenge <playerName> " + ChatColor.GRAY + ":" + ChatColor.GOLD + " Challenges a player to a PvP battle");
 			p.sendMessage(MessagePvPHeaderFooter.Footer);
 			
 		}

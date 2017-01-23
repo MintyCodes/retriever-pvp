@@ -8,8 +8,14 @@ commands:
     pvphelp:
       description: Displays the Help Message for PvP
       usage: /<command>
+    pvpchallenge:
+      description: Challenge a Player!
+      usage: /<command>
       
 permissions:
     retrieverpvp.pvphelp:
       default: op
       description: Allows access to /pvphelp
+    retrieverpvp.pvpchallenge:
+      default: op
+      description: Allows access to /pvpchallenge

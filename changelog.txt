@@ -8,3 +8,8 @@ Monday, 23 January 2017 (GMT) -
 Monday, 23 January 2017 (GMT) 
 
 - Added command /pvphelp
+
+18:23
+Monday, 23 January 2017 (GMT) 
+
+- Added command /pvpchallenge
