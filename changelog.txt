@@ -7,9 +7,14 @@ Monday, 23 January 2017 (GMT) -
 17:53
 Monday, 23 January 2017 (GMT) 
 
-- Added command /pvphelp
+- Added command /pvphelp with permission
 
 18:23
 Monday, 23 January 2017 (GMT) 
 
-- Added command /pvpchallenge
+- Added command /pvpchallenge with permission
+
+19:11
+Monday, 23 January 2017 (GMT) 
+
+- Added command /pvpsetspawn with permission

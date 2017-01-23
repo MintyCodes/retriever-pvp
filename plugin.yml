@@ -11,6 +11,9 @@ commands:
     pvpchallenge:
       description: Challenge a Player!
       usage: /<command>
+    pvpsetspawn:
+      description: Sets Spawn
+      usage: /<command>
       
 permissions:
     retrieverpvp.pvphelp:
@@ -19,3 +22,6 @@ permissions:
     retrieverpvp.pvpchallenge:
       default: op
       description: Allows access to /pvpchallenge
+    retrieverpvp.setspawn:
+      default: op
+      description: Set Spawn
