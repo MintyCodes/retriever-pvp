@@ -5,40 +5,27 @@ import org.bukkit.event.Listener;
 import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import me.admin.retrieverpvp.commands.CommandPvPDelSpawn;
 import me.admin.retrieverpvp.commands.CommandPvPChallenge;
 import me.admin.retrieverpvp.commands.CommandPvPHelp;
 import me.admin.retrieverpvp.commands.CommandPvPSetSpawn;
-import me.admin.retrieverpvp.commands.CommandPvpTeleport;
+import me.admin.retrieverpvp.commands.CommandPvPTeleport;
+import me.admin.retrieverpvp.listeners.PlayerJoinListener;
 
-public class Core extends JavaPlugin {
-	
-	private CommandPvPSetSpawn spawnLocs;
-	private CommandPvPDelSpawn delSpawn;
+public class Core extends JavaPlugin implements Listener {
 
 	private static Plugin plugin;
 
+	@Override
 	public void onEnable() {
 		plugin = this;
-		
-		if(!(getDataFolder().exists())){
-			getDataFolder().mkdirs();
-		}
-		
-		this.spawnLocs = new CommandPvPSetSpawn(this);
-		this.delSpawn = new CommandPvPDelSpawn(this);
-		
-		
+
 		getCommand("pvphelp").setExecutor(new CommandPvPHelp());
 		getCommand("pvpchallenge").setExecutor(new CommandPvPChallenge());
 		getCommand("pvpsetspawn").setExecutor(new CommandPvPSetSpawn(this));
-		getCommand("pvpdelspawn").setExecutor(new CommandPvPDelSpawn(this));
-		getCommand("pvpteleport").setExecutor(new CommandPvpTeleport(this));
-	}
-
-	public void onDisable() {
+		getCommand("pvpteleport").setExecutor(new CommandPvPTeleport(this));
+		saveConfig();
 		
-		spawnLocs.save();
+		registerEvents(this, new PlayerJoinListener());
 	}
 
 	// Much eaisier then registering events in 10 diffirent methods

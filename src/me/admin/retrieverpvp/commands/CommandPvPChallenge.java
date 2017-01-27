@@ -15,6 +15,7 @@ import me.admin.retrieverpvp.utils.MessageNoPerm;
 import me.admin.retrieverpvp.utils.MessageNotPlayer;
 import me.admin.retrieverpvp.utils.MessagePlayerNotFound;
 import me.admin.retrieverpvp.utils.MessageSyntaxError;
+import mkremins.fanciful.FancyMessage;
 
 public class CommandPvPChallenge implements CommandExecutor {
 
@@ -48,7 +49,9 @@ public class CommandPvPChallenge implements CommandExecutor {
 			return true;
 		}
 		
-		target.sendMessage(ChatColor.GOLD + p.getName() + MessageChallengeRequested.challengeRequested);
+		//target.sendMessage(ChatColor.GOLD + p.getName() + MessageChallengeRequested.challengeRequested);
+		
+		new FancyMessage(ChatColor.GOLD + p.getName() + ChatColor.GREEN + " has requested to battle you! Click this to accept the battle!").command("/pvpteleport").color(ChatColor.GOLD).tooltip("Click me to accept the battle!").color(ChatColor.GOLD).send(target);
 		
 		p.sendMessage(MessageChallengeRequestedClient.challengeRequested + ChatColor.GOLD + target.getName());
 		

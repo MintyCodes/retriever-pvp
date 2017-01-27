@@ -36,6 +36,7 @@ public class CommandPvPHelp implements CommandExecutor{
 			p.sendMessage(ChatColor.DARK_AQUA + "/pvpserverplay" + ChatColor.GRAY + ":" + ChatColor.GOLD + " Teleports all online players to the PvP arena");
 			p.sendMessage(MessageBlank.blank);
 			p.sendMessage(ChatColor.DARK_AQUA + "/pvpteleport <arenaName> " + ChatColor.GRAY + ":" + ChatColor.GOLD + " Teleports player to the specified Arena");
+			p.sendMessage(MessageBlank.blank);
 			p.sendMessage(ChatColor.DARK_AQUA + "/pvpmode <boolean> " + ChatColor.GRAY + ":" + ChatColor.GOLD + " Puts you in PvP mode");
 			p.sendMessage(MessageBlank.blank);
 			p.sendMessage(ChatColor.DARK_AQUA + "/pvpchallenge <playerName> " + ChatColor.GRAY + ":" + ChatColor.GOLD + " Challenges a player to a PvP battle");
